@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Ketogains</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body >
+        <h1>APROXIMACION DEL PUNTO MEDIO</h1>
+        <form id="formulario">
+
+            <label>Limite Inicial Superior</label>
+            <br>
+            <input type="number" name="superior" id="superior" step="0.001"/>
+            <br>
+            <label>Limite Inicial Inferior</label>
+            <br>
+            <input type="number" name="inferior" id="inferior" step="0.001"/>
+            <br>
+            <label>Objetivo</label>
+            <br>
+            <input type="number" name="objetivo" id="objetivo" step="0.001"/>
+            <br>        
+            <label>Error</label>
+            <br>
+            <input type ="number" name="error" id="error" step="0.001"/>
+            <br>
+            <input type="submit" name="enviar" value="ENVIAR DATOS" onclick="Aproximacion()"/>
+        </form>
+            <br><br>
+       
+            <h1>RESULTADOS</h1>
+            <form class="formres">
+                <label>Objetivo:</label>
+                <input type="number" id="resobj" step="0.001">
+                <br><br>
+                <label>Error:</label>
+                <input type="number" id="reserr" step="0.001">
+                <br><br>
+                <label>Valores Permitidos:</ñ>
+                <input type="number" id="resval" step="0.001">
+                <br><br>
+                <label>Iteraciones:</label>
+                <input type="number" id="resnum" step="0.001">
+            </form>
+      
+
+
+    <script type="text/javascript" src="funcionesEjercicio.js"></script>
+</body>
+</html>
